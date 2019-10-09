@@ -5,9 +5,6 @@ var salaries = {
 };
 
 var salaryArr = Object.values(salaries);
-var sum = 0;
 
-for(let salary of salaryArr){
-	sum += salary;
-}
-console.log(sum);
+
+console.log(salaryArr.reduce((a, b) => a + b));
